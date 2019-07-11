@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grow Text</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+  <p>Jerem IsBck</p>
+  <!-- <audio autoplay>
+    <source src="dun.wav" type="audio/mp3">
+    Your browser does not support the<code>audio</code> element.
+  </audio> -->
+
+  <script type="text/javascript">
+
+    var audio = document.createElement('audio');
+    var first = true;
+      window.addEventListener('mousedown',onmousedown);
+
+    function onmousedown(){
+       if(!first) return;
+       first=false;
+       audio.src="dun.mp3";
+       audio.play();
+    }
+  </script>
+</body>
+</html>

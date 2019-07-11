@@ -1,0 +1,26 @@
+html{
+  font-size: 1vw;
+}
+html, body{
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: blue;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 8rem;
+  animation-name: grow-text;
+  animation-duration: 4s;
+  /*animation-iteration-count: infinite;
+  animation-direction: alternate;*/
+  animation-timing-function: ease-in-out;
+}
+@keyframes grow-text{
+  0%{font-size: 1rem;}
+  100%{font-size: 8rem;}
+}
